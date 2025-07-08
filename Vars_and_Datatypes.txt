@@ -1,0 +1,49 @@
+Primitive Data types Memory Allocation Size
+
+Int
+byte - 1 byte
+short - 2 bytes
+int - 4 bytes
+long - 8 bytes
+
+Decimal No.
+float - 4 bytes
+double - 8 bytes
+
+Boolean
+boolean - 1 bit
+
+Characters
+Char - 2 bytes
+
+______________________________
+Above all have a range -
+Byte -128 to +127
+Short -32768 to +32767
+Integer -2147483648 to +2147483647
+    [Integer.MIN_VALUE / MAX]
+Long -9223372036854775808 to +9223372036854775807
+Float -3.4028235E380 to -1.4E.45 & 1.4E.45 to 3.4028235E380
+Double -1.7976931348623157E308 to 4.9E-324
+char 0 to 65535 (it contains char of all lang, hindi chinese, and much more...)
+    [(int) Character.MIN_VALUE / MAX]
+    emoji, symbols, other lang. words, all alphabets, and characters
+    it also contains all ASCII chars.
+_________________
+Float contains 7 digit after dot.
+
+float f = 1.1234567f;
+double d = 1.123456789112345
+double contain 15 digit after dot.
+
+===============================================
+
+String is class
+class is a blueprint of object
+you have to use object to access the class
+
+stack - int
+heap - strings, (stringpool is in the heap, all strings came bydef here...)
+string q = "in string pool"
+string s = new String("out of string pool at heap.");
+
