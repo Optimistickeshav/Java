@@ -1,0 +1,96 @@
+Data Types are of 2 types - (fig 2.1)
+
+1. Primitive
+2. Non-Primitive
+
+-----------------------------------------
+1. Primitive Data Types
+Ex.:
+It specifies the type of a Var and kind of it's value, It is predefined by java
+It always holds a Value, default value is 0.
+It is predefined and java's inbuilt data type
+These can't be used to call methods
+It starts with lowercase or $ sign,
+Stored in Stack(for small size)
+
+
+2. Non-Premitive
+Ex: String, Array, Objects
+These refers to Objects always, these are not basic Data Types, these are user-defined
+It don't hold Value, it can be Null also
+We have to Create these data types, it is not pre-built(Except String)
+It is used to call Methods()
+It starts with Uppercase letter.
+Stored in Heap(for big size)
+
+Enumeration is a user-defined value type
+------------------------------------
+
+Elaboration all 8 Primitive Data Types
+
+
+Data Type	Description
+byte		Stores whole numbers from -128 to 127
+short		Stores whole numbers from -32,768 to 32,767
+int		Stores whole numbers from -2,147,483,648 to 2,147,483,647
+long		Stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+float		Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits
+double		Stores fractional numbers. Sufficient for storing 15 to 16 decimal digits
+boolean		Stores true or false values
+char		Stores a single character/letter or ASCII values
+_________
+Primitive Number Data Types
+It is divided into 2 Groups
+Int & Float
+
+1. Integer - It stores byte, short, int, long
+2. Float - float, double.
+
+Way of writing 
+
+float floatnum = 7.77f;
+float pi = 3.14_28_57F;
+double dbnum = 55.125d;
+long longnum = 28438640556L;
+long creditCardNo = 1211_5178_9212_4231L;
+
+We can use underscores between digits in a number to improve the
+readability of our code, as shown below.
+long creditCardNo = 1211_5178_9212_4231L ;
+Note that we cannot use underscore at the beginning or at the end
+of a number, or prior to suffix L
+
+--------
+
+Scientific No.
+
+float floatnum1 = 39e8f;
+double doublenum1 = 96E3d;
+_______________________________________
+
+A variable is a container which can hold a constant value.
+The container is typically a memory location and the variable is the name given to the location in memory.
+int x = 5;
+5 is constant value, stored in stack memory location
+x is the name given to that location.
+Fig(2.2)
+________________
+
+Value of Constant can't be changed it is also called literals
+Var is called Identifier.
+_______________
+
+Keywords
+
+These are predefined words, explained to java compiler.
+
+int age = 22;
+
+here, age is a variable, it is not defined in keywords, but int is a keyword it is predefined.
+we can't use keywords like -
+
+int int = 2;
+
+it is wrong.
+
+There are 48 Keywords in Java.(Fig. 2.4)

@@ -1,0 +1,26 @@
+Question 1.
+
+x = Ramesh Basic Sal
+Dearness Allowance = 40%
+House Rent Allowance = 20%
+
+Write a java program to calculate his gross sal(it incls. the 40 & 20%).
+________________
+
+Question 2. x = distance in km
+
+Write a java program to convert x into, mtr, ft, inch, cm.
+____________________
+
+Question 3. User will Enter Marks out of 100 for 5 Subjects.
+Write a Program to Calc. Total Marks out of 500 & Percentage Obtained by the student.
+____________________
+
+Question 4. User will enter Temprature of a city in Fahrenheit degrees,
+Write a program to convert this into centigrade degrees and print both Temperatures.
+
+____________________
+
+Question 5. User will Enter Length & Width of Rectangle, and Radius of Circle.
+Write a program to Print Area and Perimeter of Rectangle & Area and Circumference of a Circle.
+

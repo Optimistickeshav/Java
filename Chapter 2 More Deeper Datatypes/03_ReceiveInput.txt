@@ -1,0 +1,4 @@
+Receiving Input - One More Way
+There is one more way to receive input from keyboard.
+It makes use of InputStreamReader and BufferedReader objects instead of Scanner object.
+The following program shows how to use these objects.
