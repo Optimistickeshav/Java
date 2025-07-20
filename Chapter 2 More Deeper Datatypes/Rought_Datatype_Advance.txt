@@ -1,0 +1,126 @@
+h2 Data Type  Revisited -
+
+Let's deep dive into Int & Float.
+
+h3 Integers
+
+java provides 4 types of Int
+Datatype	Size	Range
+- byte	1	-128 to 127
+- short	2	-32768 to 32767
+- int	4	-2147483648 to 2147483647
+- long	8	-9223372036854775808 to +9223372036854775807
+
+
+* Num. without decimal point is Integers and with decimal point is real number called float.
+
+* If, we'll assign bigger value to the datatypes it will show error.
+like byte max range is 127
+if we do like, 
+byte a = 300; //it will show error.
+
+* In order to treat an Int as long int, we have to add suffix L or l at it's end.
+long int a = 364l*1000;
+
+* We can unse underscores between digits in a no., to improve the readability of code.
+long creditcardno = 1234_6462_5116_6489;
+
+________________________________________________
+
+h3 Real No.
+
+it is float and double.
+
+Fig. 3.2 SS
+
+* by default every no. with decimal point is treated as double.
+* use f or F suffix to make it float.
+	float x = 3.5; //it'll show error
+	float x1 = 3.5f; //it is ok
+	double x2 = 3.5f; //it is ok, it is a float converted into double.
+	double x3 = 3.5; //it is ok
+* double d = 3d; //it is treated as a double
+* float fivelac = 5_00_000f; // under is always used between 2 digits only.
+* e means Exponent
+	2e3 = 2 * 10^3
+	    = 2 * (10 * 10 * 10)
+	    = 2000
+* so, we can also write like this -
+	float c = 2.41295e5
+
+	elaborating...
+	2.41295 * 10^5
+	2.41295 * 100000
+	241295.0
+	241295
+
+* A real no. is stored in a float/double, it is stored in binary form,
+during conversion of decimal to binary, precision may lost, so, 2 real no. may appear unequal.
+Eg - 5.375 and 5.375f are not equal.
+5.375 is treated as double, so it'll be a 64bit binary no.
+5.375f is treated as float, so it'll be a 32bit binary no.
+
+_____________________________________________
+
+h3 Char Data Type
+
+✅ What is char in Java?
+char is a primitive data type in Java.
+
+It is used to store a single character like 'A', '5', or '$'.
+
+But internally, it actually stores a number (code point) which represents a character.
+
+🧬 What is Unicode?
+Unicode is a global character encoding standard that:
+
+✅ Assigns a unique number (called code point) to every character
+✅ Supports all major languages — English, Hindi, Chinese, Arabic, Emoji, etc.
+✅ Examples:
+
+Character	Unicode	Java char
+'A'	U+0041	char c = 'A';
+'अ'	U+0905	char c = 'अ';
+'你'	U+4F60	char c = '你';
+'😊'	U+1F60A	stored as surrogate pair
+
+📏 Difference from ASCII
+Feature	ASCII	Unicode
+Characters	Only 128 (basic English)	Over 1.4 million code points
+Size	7-bit or 8-bit	16-bit (Java char) and beyond
+Language Support	Only English letters	Almost all world languages
+Java Support	❌ Limited	✅ Fully supported in Java
+
+public class Answer {
+    public static void main(String[] args) {
+        char ch = 'A';             // 'A' is assigned to ch
+        System.out.println((int)ch);  // Print the Unicode value of 'A'
+    }
+}
+
+
+h3 boolean
+
+h2 Input
+	h3 Input another way
+
+h2 CLI
+
+h2 Java Instructions
+
+h2 Type Declaration
+
+h2 Type Instruction
+	h3 Arithmetic Instruction
+		h4 type conv.
+		h4 explicit conv.
+		h4 hierarchy of operations
+		h4 associativity of operators
+		h4 constant var.
+h2 Console Output in java
+	h4 println() and format() functions
+
+h2 Control Inst. 
+
+
+
