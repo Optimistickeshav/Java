@@ -1,0 +1,23 @@
+Why do we write this at the beginning of a java program ?
+
+package filename;
+
+A package is a collection of classes.
+
+Example -
+
+A company = (Java Project)
+    — contains departments = (Packages)
+        — which have files = (Java Classes)
+            — which have infomation = (Functions)
+
+Technically, we write it as -
+
+com.company.hr.Employee.java
+com.company.payroll.SalaryCalculator.java
+
+com.company is project
+    hr and payroll is package
+        employees and salarycalculator is class
+
+

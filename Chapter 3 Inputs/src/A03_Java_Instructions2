@@ -1,0 +1,104 @@
+H1 Type Declaration Instruction
+
+This instruction is used to declare the type of each variable being used in the program. Any variable used in the program must be declared before using it in any statement.
+
+Book - pg55
+
+The following statements would work:
+    int a, b, c, d ; //here, ints are declared and ready to use.
+    a = b = c = 10 ;
+However, the following statement would not work:
+    int a = b = c = d = 10 ; // here value can't be assigned during declaration
+
+See how Java reads the line
+
+    int a, b, c, d ; //it is declared here
+    a = b = c = 10 ; //and here
+    (a = (b = (c=10))) // program knows c is already declared and ready to get a value.
+    (a = (b = 10)) // program knows b is already declared and ready to get a value.
+    (a = 10) // program knows a is already declared and ready to get a value.
+
+But,
+
+    int a = b = c = d = 10 ; // here value can't be assigned during declaration
+
+    int a = (b = (c = (d = 10))); //d is not declared, it'll give error declaration works from the beginning.
+    and a is still blank.
+
+H1 Arithmetic Instruction
+
+    Pg - 56, book.
+
+    //literals = are direct values input in program, assigned to a variable.
+    //non-literals is variable name.
+
+    System.out.println(42);       // 42 is a literal
+    int num = 42;                 // num is a non-literal
+    System.out.println(num);     // num is used (not the literal)
+
+any arithmentic cal. between shorts, char, int or bytes always outputs integers
+    convert them to whatever you want.
+    short n = (short)(l + m);  // Fix with typecast
+
+H1  Explicit Conversion
+    At times we are required to explicitly convert one type into another. This
+    is done using a type casting operation. Let us consider an example.
+    float a, b ;
+    int x = 6, y = 4 ;
+    a = x / y ;
+    b = ( float ) x / y ;
+    System.out.println ( "Value of a = " + a ) ;
+    System.out.println ( "Value of b = " + b ) ;
+    And here is the output...
+    Value of a = 1.0
+    Value of b = 1.5
+
+H1 HERIARCHY OF OPERATORS
+
+H1 Associativity of Operators
+   When an expression contains two operators of equal priority, the tie
+   between them is settled using the associativity of the operators. All
+   operators in Java have either Left to Right associativity or Right to Left
+   associativity.
+
+   ⚙️ 2 Types of Associativity:
+   Left to Right
+   Left side ka operator pehle chalega
+   a - b + c = ((a - b) + c)
+
+   Right to Left
+   Right side ka operator pehle chalega
+   a = b = c = a = (b =
+
+   int result = 10 - 5 + 2;   // Subtraction and Addition have same precedence
+                (10 - 5) + 2 = 5 + 2 = 7
+
+   int a, b, c;
+   a = b = c = 100;
+
+   IT IS AS -
+   a = (b = (c = 100));
+
+h1 Constant Variables
+   final float pi = 3.14f ;
+
+h1 Console Output in Java
+   The screen and keyboard together are called a console.
+   To send output to screen two functions are popularly used println( ) and format( ).
+
+   int num = 762432 ;
+   //%10 MEANS 10 columns reserved hai or numbers k liye
+
+   System.out.format ( "%10d\n", num ) ;//762432
+   System.out.format ( "%010d\n", num ) ;//0000762432
+   System.out.format ( "%+10d\n", num ) ;//+762432
+   System.out.format ( "%,10d\n", num ) ;//762,432
+   System.out.format ( "%+,10d\n", num ) ;//+762,432
+   System.out.format ( "%10.2f\n", 5.05 ) ;//5.05
+   System.out.format ( "%10.2f\n", 413.25 ) ;//413.25
+   //%10 means . se pehle 10 columns reserved hai, or . k baad 2 numbers k liye col reserved hai
+   
+
+
+
+

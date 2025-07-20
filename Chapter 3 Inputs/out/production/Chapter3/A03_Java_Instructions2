@@ -1,0 +1,38 @@
+H1 Type Declaration Instruction
+
+This instruction is used to declare the type of each variable being used in the program. Any variable used in the program must be declared before using it in any statement.
+
+Book - pg55
+
+The following statements would work:
+    int a, b, c, d ; //here, ints are declared and ready to use.
+    a = b = c = 10 ;
+However, the following statement would not work:
+    int a = b = c = d = 10 ; // here value can't be assigned during declaration
+
+See how Java reads the line
+
+    int a, b, c, d ; //it is declared here
+    a = b = c = 10 ; //and here
+    (a = (b = (c=10))) // program knows c is already declared and ready to get a value.
+    (a = (b = 10)) // program knows b is already declared and ready to get a value.
+    (a = 10) // program knows a is already declared and ready to get a value.
+
+But,
+
+    int a = b = c = d = 10 ; // here value can't be assigned during declaration
+
+    int a = (b = (c = (d = 10))); //d is not declared, it'll give error declaration works from the beginning.
+    and a is still blank.
+
+H1 Arithmetic Instruction
+
+    Pg - 56, book.
+
+    //literals = are direct values input in program, assigned to a variable.
+    //non-literals is variable name.
+
+    System.out.println(42);       // 42 is a literal
+    int num = 42;                 // num is a non-literal
+    System.out.println(num);     // num is used (not the literal)
+

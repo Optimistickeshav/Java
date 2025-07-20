@@ -1,0 +1,75 @@
+Decision Control Instructions
+
+H1 Intro
+    4 types of Control Instructions in Java
+    (a) Sequence Control Instruction
+    Step by step, line by line writing of code
+
+    (b) Selection or Decision Control Instruction
+    Select = Choose path, make decision based on if-else
+
+    (c) Repetition or Loop Control Instruction
+    Loops - for, while.
+
+    (d) Case Control Instruction
+    switch, case
+
+h1 Decision
+
+    A decision control instruction can be implemented in Java using:
+    (a) The if-else statement
+    (b) The conditional operators (condition ? trueResult : falseResult;)
+
+h1 The if-else Statement
+    if (this condition is true)
+        {//this is called if block
+        execute statement1 ;
+        execute statement2 ;
+        }
+    else
+        {//this is called else block
+        execute statement4 ;
+        execute statement5 ;
+        }
+    h2 Relational Operators
+        They allows us to compare values, equal, unequal, greater, smaller.
+        See - Fig-4.1_Relational_Operator
+
+    h2 if-else
+        Nested if-else
+
+h1 More Complex Decision Making
+
+    Logical Operators -
+    && = AND
+    || = OR
+    ! = NOT
+
+h1 The else if Clause
+    If you are using single statement in if and else, then no need of {} curly braces.
+
+    if ( per >= 60 )
+    System.out.println ( "First division" ) ;
+    else if ( per >= 50 )
+    System.out.println ( "Second division" ) ;
+    else if ( per >= 40 )
+    System.out.println ( "Third division" ) ;
+    else
+    System.out.println ( "Fail" ) ;
+
+h1 The & and | Operators
+    Short Circuiting
+
+
+    && = both cond. true, if first failed it won't check second. (Logical Oprtr AND)
+    & = if first failed, then it still check 2nd (Bitwise Operator Int)
+    || = one cond. true and one is false (Logical Oprtr OR)
+    | = any one true (Logical Oprtr AND)
+
+h1 The ! Operators
+
+h1 The Conditional Operators
+    The conditional operators ? and : are sometimes called ternary operators since they take three arguments.
+    expression 1 ? expression 2 : expression 3
+
+    
